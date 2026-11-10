@@ -1,86 +1,12 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
 <meta charset="utf-8">
-<meta name="viewport" content="width=device-width,initial-scale=1">
-<title>The book club invitation prompt | Martins, Managed™</title>
-<style>
-body{margin:0;background:#faf6f1;color:#30282f;font-family:Arial,Helvetica,'Work Sans',sans-serif;line-height:1.7}
-.wrap{max-width:680px;margin:0 auto;padding:28px 20px 48px}
-h1{font-family:Georgia,'Instrument Serif',serif;font-weight:400;color:#594655;font-size:40px;line-height:1.15;margin:8px 0}
-.sub{color:#71686d;font-size:15px}
-.card{background:#fffdf9;border:1px solid #cbbdc1;border-radius:14px;padding:22px;margin-top:22px}
-.prompt{background:#f3edef;border:1px solid #cbbdc1;border-radius:10px;padding:18px;font-family:Georgia,serif;font-size:15px;line-height:1.6;white-space:pre-wrap;word-wrap:break-word}
-button{background:#b8677b;color:#fff;border:0;border-radius:24px;padding:12px 22px;font-size:16px;font-weight:600;cursor:pointer}
-.note{border:1.5px solid #b8677b;border-radius:10px;background:#f3edef;padding:14px 16px;margin-top:18px}
-a{color:#b8677b}
-</style>
+<title>The online RSVP invitation prompt | Martins, Managed™</title>
+<meta http-equiv="refresh" content="0; url=https://iamcharmar.github.io/online-rsvp-invite-prompt/">
+<link rel="canonical" href="https://iamcharmar.github.io/online-rsvp-invite-prompt/">
 </head>
-<body><div class="wrap">
-<p class="sub">Martins, Managed™ · the <em>carry less</em> weekly email</p>
-<h1>The book club invitation — the full prompt</h1>
-<p>This is the prompt behind the book club invitation from this week’s email — the cozy flyer, the RSVP form, and the live “Who’s coming” list. Fill in the brackets with your book club’s details, then paste the whole thing into your AI tool and let it build and host the page for you.</p>
-<div class="note">📚 <strong>You only need to fill in the brackets:</strong> your book, the host, the date, and the address (or “shared privately”). Everything else — design, RSVP form, live guest list — is already spelled out in the prompt.</div>
-<div class="card">
-<p><button onclick="const el=document.getElementById('prompt');const r=document.createRange();r.selectNodeContents(el);const s=getSelection();s.removeAllRanges();s.addRange(r);document.execCommand('copy');this.textContent='Copied — now paste it into your AI tool';">Select &amp; copy the prompt</button></p>
-<div class="prompt" id="prompt">EDIT THESE FIRST — replace every [BRACKET] before you paste:
-
-[BOOK CLUB NAME] — e.g. Neighborhood Book Club
-[BOOK TITLE] — e.g. A Redbird Christmas
-[AUTHOR] — e.g. Fannie Flagg
-[HOST NAME] — e.g. a neighbor&#x27;s name
-[WEEKDAY, DATE] — e.g. Thursday, December 10
-[TIME] — e.g. 7:00 PM
-[ADDRESS] — the host&#x27;s address as plain text, or write &quot;At the host&#x27;s home — address shared privately&quot; if the host doesn&#x27;t want it on a public page
-[TEASER BULLETS] — 1–2 short bullets about the book to tempt readers: a one-line hook, and one question to ponder while reading. Keep it to two bullets, never a paragraph.
-[SEASON / THEME] — e.g. Christmas, fall, summer — this sets the emoji, the scene props, and the sparkle effect
-
-Step 1 — Build the invitation page:
-Build me a single, self-contained HTML page for my book club — a cozy invitation with working RSVPs, designed to be opened on phones from a texted link. No guest login or sign-up anywhere. Match this structure exactly:
-
-1. THE FLYER CARD (top of page):
-- A rounded card (18px corners, soft warm shadow) on a cream background.
-- Header on a cream gradient: the club name in spaced evergreen capitals with wide letter-spacing, a thin gold rule under it, then the script headline &quot;Join us this month for&quot; in a flowing cursive, the book title very large in deep red serif, and &quot;by [AUTHOR]&quot; in italic serif underneath.
-- A cozy scene image under the header, with the ACTUAL book cover of [BOOK TITLE] front and center — on a table by a fireplace with a mug of cocoa and seasonal props to match [SEASON / THEME]. All lettering on the page is real text in web fonts — never bake words into the image; they go soft when people zoom.
-- A details block under the image: &quot;Hosted by [HOST NAME]&quot;, then &quot;[WEEKDAY, DATE] at [TIME]&quot;, then [ADDRESS], a gold ✦ ✦ ✦ divider, and one warm italic line inviting people to come discuss the book.
-
-2. ACTION BUTTONS under the flyer:
-- One big red pill button: &quot;🎄 Tap to RSVP&quot; (swap the emoji to fit [SEASON / THEME]) that scrolls to the RSVP form.
-- Two smaller pill links beside each other: &quot;📅 Add to Calendar&quot; (a Google Calendar template link pre-filled with the club name, book, date and time) and &quot;📍 Directions&quot; (a Google Maps link to [ADDRESS] — leave it as a general Maps link if the address is private).
-
-3. A &quot;Something to ponder as you read&quot; card with my [TEASER BULLETS].
-
-4. THE RSVP CARD, headed &quot;RSVP here&quot;:
-- Eyebrow line with the club name, the heading &quot;RSVP here&quot;, and a sub-line with the book title, date and time.
-- A form with: &quot;Your name&quot; text field; &quot;Can you make it?&quot; as two big tappable pills — &quot;🎄 Count me in!&quot; (fills evergreen green when selected) and &quot;Can&#x27;t make it&quot; (fills soft red when selected); and &quot;A note for the host (optional)&quot; as a textarea.
-- A big red pill submit button: &quot;Send my RSVP ❤️&quot;.
-- Friendly inline error messages if the name or the yes/no choice is missing — and if saving fails, tell the guest to text the host instead. Never fail silently.
-- After submitting, replace the form with a success state: &quot;You&#x27;re in, [first name]! 🎄&quot; and &quot;We&#x27;ve got your RSVP — see you [WEEKDAY, DATE] at [TIME].&quot; (or &quot;We&#x27;ll miss you, [first name] ❤️&quot; for a no), plus an &quot;Update my RSVP&quot; button that brings the form back.
-
-5. A &quot;WHO&#x27;S COMING&quot; CARD under the RSVP, visible to everyone on the main page:
-- Three count boxes across the top: Coming / Can&#x27;t make it / Responses.
-- Response cards, newest first: the guest&#x27;s name in bold, a small tag pill on the right (&quot;Coming&quot; in an evergreen tint, &quot;Can&#x27;t make it&quot; in soft red), and their note underneath when they wrote one.
-- A host view at the same link with ?host=1 that adds a &quot;Hide from list&quot; button to each response (two taps to confirm). Hiding removes it from everyone&#x27;s view. Nothing is ever deleted.
-
-DESIGN SYSTEM (use these exactly):
-- Colors: cream background #faf3e7, paper cards #fffaf0, red #a52a21 (buttons), deep red #8c211a (title), evergreen #2f4a38, gold #b98a2f (rules and accents), ink #3d2c22, muted #7d6a5c, hairline borders #e6d7bd.
-- Fonts: Fraunces for headings and the book title, Great Vibes for the script headline, Jost for the club name and labels, Nunito Sans for body text.
-- Page width max 640px, centered, generous padding; rounded corners and soft shadows on every card; a gentle falling-snow (or seasonal sparkle) canvas behind everything, subtle and non-interactive.
-
-Step 2 — Make the RSVPs actually work (this is required, not decoration):
-- Save every RSVP to Firebase Firestore so the host and all guests share ONE live list. A version that only saves in the visitor&#x27;s own browser is not acceptable for the real invitation.
-- One document per guest per event, tagged with an event key for this meeting, storing: name, attending (yes/no), note, and an updatedAt timestamp.
-- Remember each guest&#x27;s document ID in their browser (localStorage) so when they come back they UPDATE their existing RSVP instead of creating a duplicate — prefill their name and note, and show their success state.
-- Listen for live updates (Firestore onSnapshot) filtered to this event, and re-render the counts and the Who&#x27;s coming list automatically whenever anyone responds.
-- Escape guest names and notes when rendering them (never inject raw HTML from a form field).
-
-Step 3 — Host it and finish:
-- Deliver one HTML file (plus the scene image) that I can host free, e.g. on Vercel, at a public link with no sign-in wall for guests.
-- Set the share-preview (Open Graph) tags: title = club name + book title, description = &quot;Join us this month for [BOOK TITLE] by [AUTHOR]. [WEEKDAY, DATE] at [TIME]. Tap to RSVP.&quot;, image = the flyer/scene image.
-- Test before you call it done: submit a test RSVP and watch it appear in Who&#x27;s coming with the counts updated; submit again as the same guest and confirm it updates in place instead of duplicating; check it at phone width.
-
-One privacy note: this page is visible to anyone with the link. Only put the host&#x27;s home address on it if the host is happy for every guest to have it that way — otherwise use the &quot;address shared privately&quot; wording and share the address by text.</div>
-</div>
-<p class="sub" style="margin-top:18px">Want to see what it builds first? <a href="https://redbird-book-club-demo.vercel.app/">Try the demo invitation</a> — names and address removed, RSVPs are samples.</p>
-</div></body>
+<body>
+<p>This prompt has a new home: <a href="https://iamcharmar.github.io/online-rsvp-invite-prompt/">The online RSVP invitation — the full prompt</a>.</p>
+</body>
 </html>
