@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>The deal-hunting prompt | Martins, Managed™</title>
+<style>
+body{margin:0;background:#faf6f1;color:#30282f;font-family:Arial,Helvetica,'Work Sans',sans-serif;line-height:1.7}
+.wrap{max-width:680px;margin:0 auto;padding:28px 20px 48px}
+h1{font-family:Georgia,'Instrument Serif',serif;font-weight:400;color:#594655;font-size:40px;line-height:1.15;margin:8px 0}
+.sub{color:#71686d;font-size:15px}
+.card{background:#fffdf9;border:1px solid #cbbdc1;border-radius:14px;padding:22px;margin-top:22px}
+.prompt{background:#f3edef;border:1px solid #cbbdc1;border-radius:10px;padding:18px;font-family:Georgia,serif;font-size:15px;line-height:1.6;white-space:pre-wrap;word-wrap:break-word}
+button{background:#b8677b;color:#fff;border:0;border-radius:24px;padding:12px 22px;font-size:16px;font-weight:600;cursor:pointer}
+.note{border:1.5px solid #b8677b;border-radius:10px;background:#f3edef;padding:14px 16px;margin-top:18px}
+a{color:#b8677b}
+</style>
+</head>
+<body><div class="wrap">
+<p class="sub">Martins, Managed™ · the <em>carry less</em> weekly email</p>
+<h1>The deal-hunting prompt — the full prompt</h1>
+<p>This is the prompt behind the Christmas lights plan in this week’s email — the one that turned “some red and white lights, please” into a verified buy list with a grand total I could hold it to. It works for any project with a shopping list attached: fill in the brackets with your project, then paste the whole thing into your AI tool and let it chase the prices.</p>
+<div class="note">🛒 <strong>You only need to fill in the brackets:</strong> what you’re building, your measurements, the rules everything has to match, and the stores you have. The prompt makes it verify every spec on the product page, compare price per foot (or per bulb, or per ounce), and count the sneaky costs — membership fees and shipping — in the total.</div>
+<div class="card">
+<p><button onclick="const el=document.getElementById('prompt');const r=document.createRange();r.selectNodeContents(el);const s=getSelection();s.removeAllRanges();s.addRange(r);document.execCommand('copy');this.textContent='Copied — now paste it into your AI tool';">Select &amp; copy the prompt</button></p>
+<div class="prompt" id="prompt">EDIT THESE FIRST — replace every [BRACKET] with your project:
+
+[WHAT I&#x27;M BUILDING] — the project in plain words, e.g. &quot;Christmas lights for the front of my house: C9s on the roofline, two trees wrapped like candy canes, a pre-lit garland and wreath at the entry&quot;
+[MY MEASUREMENTS] — every quantity, length, width or count you&#x27;ve worked out, e.g. &quot;about 72 ft of red and 72 ft of warm white for the trees; at least 30 ft of garland; a wreath no bigger than 48 inches&quot;
+[MUST-MATCH RULES] — the details that have to agree with each other or with things you already own, e.g. &quot;red and white strands on the same tree must be the same bulb texture (both faceted, bulb spacing close); everything pre-lit; warm white only, never cool white&quot;
+[ALREADY OWN] — what you&#x27;re reusing, so it costs $0, e.g. &quot;red/white C9 sets for the roofline, red/white/green set for the planter wall&quot;
+[STORES I HAVE] — memberships and stores you&#x27;ll actually use, e.g. &quot;Sam&#x27;s Club Plus (free shipping over $50), Costco, Home Depot, Walmart, Amazon — and I&#x27;m willing to join BJ&#x27;s if the deal needs it, but count the membership fee in my total&quot;
+[BUDGET] — a cap if you have one, or &quot;no cap — I want the best verified price per item&quot;
+
+Now do this:
+
+1. Work out the full shopping list from [MY MEASUREMENTS] before you search. If a quantity is a guess, show me the math so I can correct it.
+
+2. For every item, search across all of [STORES I HAVE] plus any reputable store you find — then check the actual product page, not just the search result. Verify the specs that matter (size, count, texture, color temperature, indoor/outdoor rating) on the page itself. If a page doesn&#x27;t confirm a spec, say so — never guess a spec into existence.
+
+3. Compare on the unit that matters — price per foot, per bulb, per ounce — not just the sticker price. A bigger pack that looks expensive is often half the per-unit cost. Show the per-unit math for the top two or three options on each big item.
+
+4. Respect [MUST-MATCH RULES] absolutely. If the cheapest option breaks a match rule, it&#x27;s not an option — find the cheapest one that doesn&#x27;t, and tell me what the rule cost me.
+
+5. Give me the final list grouped BY RETAILER (so I can place each order in one go), with quantities, the math, and a subtotal per store. Include EVERYTHING in the totals: a membership fee if a deal requires joining, shipping if an order falls under a free-shipping threshold, tax only if the page shows it.
+
+6. List what I already own as $0 lines so the grand total is honest, and end with one grand total I can hold you to.
+
+7. When I change my mind mid-search (I will), update the whole list and the totals — don&#x27;t just answer the last question and leave the old numbers standing.
+
+Rules: never present a price you didn&#x27;t see on a live page today; never call something &quot;the best deal&quot; without the per-unit comparison to prove it; if two options are within a few dollars, recommend the one that matches what I already own.
+</div>
+</div>
+<p class="sub" style="margin-top:18px">Curious what it produced? The lights plan and prices are in this week’s email — <a href="https://martinsmanaged.com">martinsmanaged.com</a>.</p>
+</div></body>
+</html>
